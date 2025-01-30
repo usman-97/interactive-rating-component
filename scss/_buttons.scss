@@ -1,0 +1,49 @@
+%btn {
+  display: block;
+  width: 100%;
+  text-align: center;
+  text-transform: uppercase;
+
+  &:hover {
+    transform: scale(0.98);
+  }
+}
+
+%btn-rating {
+  margin-bottom: 1.5em;
+  padding: 10px 15px;
+  border-radius: 50%;
+}
+
+.btn-submit {
+  @extend %btn;
+  width: 100%;
+  padding: 10px;
+  background-color: $orange;
+  color: $very-dark-blue;
+  font-weight: 700;
+  border-radius: 30px;
+
+  &:hover {
+    background-color: $white;
+  }
+}
+
+.selected-rating-number {
+  @extend %btn-rating;
+  background-color: $white;
+  color: $very-dark-blue;
+}
+
+.rating-number {
+  @extend %btn-rating;
+  background-color: darken($light-grey, 40%);
+  color: $light-grey;
+}
+
+.rating-number-hover {
+  &:hover {
+    background-color: $orange;
+    color: $very-dark-blue;
+  }
+}

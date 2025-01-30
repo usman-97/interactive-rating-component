@@ -1,0 +1,23 @@
+.selected-rating {
+  background-color: $white;
+  color: $very-dark-blue;
+}
+
+.show-thank-you-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+
+  img {
+    margin-bottom: 2em;
+  }
+
+  .selected-rating {
+    margin-bottom: 2em;
+    padding: 8px 15px;
+    background-color: darken($light-grey, 40%);
+    color: $orange;
+    border-radius: 30px;
+  }
+}
