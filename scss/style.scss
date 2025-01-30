@@ -3,7 +3,8 @@
 @import "globals";
 
 section {
-  max-width: 80%;
+  max-width: 25rem;
+  min-width: auto;
   padding: 20px 35px;
   background-color: $dark-blue;
   border-radius: 20px;
@@ -33,34 +34,9 @@ section {
     display: flex;
     justify-content: center;
     gap: 5%;
-  }
-}
 
-@media only screen and (min-width: 1250px) {
-  section {
-    width: 25%;
-
-    .rating {
-      &-number {
-        padding: 15px 22px;
-      }
-    }
-
-    .selected-rating-number {
+    &-number {
       padding: 15px 22px;
-    }
-  }
-}
-
-@media only screen and (min-width: 768px) and (max-width: 1250px) {
-  section {
-    max-width: 45%;
-    min-width: 40%;
-
-    .rating {
-      &-number {
-        padding: 15px 22px;
-      }
     }
 
     .selected-rating-number {
